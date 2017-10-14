@@ -11,6 +11,10 @@
 #include <string.h>
 #include <getopt.h>
 
+#if defined(WIN32)
+#define strdup _strdup
+#endif
+
 typedef enum
 {
     VTChar,
